@@ -1,11 +1,11 @@
-// import Vue from "vue";
+import Vue from "vue";
 
-// const ElementUI = require("element-ui");
-// // const locale = require("element-ui/liv/locale/lang/ja");
-// Vue.use(ElementUI);
+const ElementUI = require("element-ui");
+const locale = require("element-ui/lib/locale/lang/ja");
+Vue.use(ElementUI);
 
-import Vue from 'vue'
-import ElementUI from 'element-ui'
-import locale from 'element-ui/lib/locale/lang/ja'
+// import Vue from 'vue'
+// import ElementUI from 'element-ui'
+// import locale from 'element-ui/lib/locale/lang/ja'
 
-Vue.use(ElementUI, { locale })
+// Vue.use(ElementUI, { locale })

@@ -1,6 +1,6 @@
 export default {
     setItems(state, lists) {
-        state.lists = lists
+        state.lists = lists;
     },
     hideLoading(state) {
         state.isLoading = false;

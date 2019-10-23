@@ -6,7 +6,7 @@
         </template>
         <!-- 検索結果一覧 -->
         <template v-else>
-            <el-col :span="6" v-vor="(element, index) in lists" :key="index" class="col-style">
+            <el-col :span="6" v-for="(element, index) in lists" :key="index" class="col-style">
                 <el-card :body-style=" { padding: '15px' }" class="box-card">
                     <div slot="header">
                         <!-- v-slotというディレクティブが作られている。コンポーネント間だとデータの受け渡しに一工夫必要な可能性あり -->
@@ -44,9 +44,9 @@
                 </el-card>
             </el-col>
             <div v-if="250 < scrollY" class="page-component-up">
-                <toransition name="fade">
-                    <i class="celicon-caret-top" @click="scrollTop" />
-                </toransition>
+                <transition name="fade">
+                    <i class="el-icon-caret-top" @click="scrollTop" />
+                </transition>
             </div>
         </template>
     </div>
@@ -122,7 +122,7 @@ export default {
         color: #59bb0c;
     }
 
-    a.hover {
+    a:hover {
         color: #3b8070;
     }
 </style>

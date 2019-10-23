@@ -9,9 +9,9 @@
 <script>
 export default {
     props: ['error'],
-    mounted(){
-        console.log(this.props)
-    }
+    // mounted(){
+    //     console.log(this.props)
+    // }
 }
 </script>
 
